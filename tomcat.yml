@@ -8,14 +8,10 @@
 
     - name: untar the apache file
       command: tar -zxvf apache-tomcat-9.0.91.tar.gz
-        #unarchive:
-        #src: "apache-tomcat-9.0.91.tar.gz"
-        #dest: "/root/"
 
     - name: rename the tomcat
       command: mv apache-tomcat-9.0.91 tomcat
-      tags: abc
-
+      
     - name: install java
       command: yum install java-1.8.0-openjdk -y
 
